@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+        <style>
+      .highlight {
+  background-color: yellow;
+}
+      .navbar {
+            background: crimson;
+            border-radius: 4px;
+            font-weight: 400;
+            color: #fff;
+            text-decoration: none;
+            padding: .5rem 1rem;
+            line-height: 2.3;
+}
+.navbar-nav {
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+}
+.navbar-light .navbar-brand {
+            color: #000;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 2px;
+}
+.navbar-light .navbar-brand span {
+            color: #0d6efd
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+            color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+            color: #000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+            color: #000;
+}
+.w-100 {
+            height: 100vh;
+}
+.navbar-toggler {
+            padding: 1px 5px;
+            font-size: 18px;
+            line-height: 0.3;
+            background: #fff;
+}
+p{
+    font-size: 20px;
+}
+
+ @media only screen and (max-width: 767px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            .carousel-caption {
+                bottom: 165px;
+            }
+            .carousel-caption h5 {
+                font-size: 17px;
+            }
+            .carousel-caption a {
+                padding: 10px 15px;
+                font-size: 15px;
+            }
+            .navbar .getstarted {
+                display: none;
+            }
+        }
+
+        .item{
+            background-color: rgb(223, 222, 222);
+            border-radius:10px;
+        }
+    .form-label{
+      font-size: 20px;
+      color: black;
+    }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="/"><span>Health</span>Mate</a> 
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+            <a class="nav-link" href="/profile/{{userName}}/editProfile">Back to my Profile</a>
+					</li>
+					<li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>						
+          </li>
+        </ul>
+			</div>
+		</div>
+	</nav>
+    <div class="container">
+        <div class="row text-center">
+            <h3 class="py-3">Disclaimer</h3>
+    <p>The information provided by our website “HealMate” is for general information purposes only. All information on this site is provided in good faith. However we make no representation or warranty of any kind , express or implied, regarding the accuracy , adequacy , validity , reliability, availability or completeness of any information on the site.
+        </p><br>
+        <p>
+
+Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the site or reliance on any information provided on the site. Your use of the site and your reliance on any information on the site is solely at your own risk.</p>
+<br><p>
+The site cannot and does not contain health advice. The health information is provided for general information and is not a substitute for professional health advice.
+</p><br> <p>
+Accordingly, before taking any action based upon such information , we encourage you to consult with the appropriate medical and healthcare professionals. We do not provide any kind of health advice. 
+</p><br> <p>
+<em> Please note: </em>The prediction is being made to ensure the user doesn’t ignore the symtoms hence we advice you to consult a doctor immediately regarding your symtoms.
+</p>
+</div>
+        </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

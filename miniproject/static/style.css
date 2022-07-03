@@ -1,0 +1,66 @@
+.navbar {
+            background: crimson;
+            border-radius: 4px;
+            font-weight: 400;
+            color: #fff;
+            text-decoration: none;
+            padding: .5rem 1rem;
+            line-height: 2.3;
+}
+.navbar-nav{
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+}
+.navbar-light .navbar-brand {
+            color: #000;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 2px;
+}
+.navbar-light .navbar-brand span {
+            color: #0d6efd
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+            color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+            color: #000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+            color: #000;
+}
+.w-100 {
+            height: 100vh;
+}
+.navbar-toggler {
+            padding: 1px 5px;
+            font-size: 18px;
+            line-height: 0.3;
+            background: #fff;
+}
+
+ @media only screen and (max-width: 767px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            .carousel-caption {
+                bottom: 165px;
+            }
+            .carousel-caption h5 {
+                font-size: 17px;
+            }
+            .carousel-caption a {
+                padding: 10px 15px;
+                font-size: 15px;
+            }
+            .navbar .getstarted {
+                display: none;
+            }
+        }
+
+        .item{
+            background-color: rgb(223, 222, 222);
+            border-radius:10px;
+        }

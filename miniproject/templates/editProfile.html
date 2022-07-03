@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> </title>
+    <style>
+      .navbar {
+            background: crimson;
+            border-radius: 4px;
+            font-weight: 400;
+            color: #fff;
+            text-decoration: none;
+            padding: .5rem 1rem;
+            line-height: 2.3;
+}
+.navbar-nav {
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+}
+.navbar-light .navbar-brand {
+            color: #000;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 2px;
+}
+.navbar-light .navbar-brand span {
+            color: #0d6efd
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+            color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+            color: #000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+            color: #000;
+}
+.w-100 {
+            height: 100vh;
+}
+.navbar-toggler {
+            padding: 1px 5px;
+            font-size: 18px;
+            line-height: 0.3;
+            background: #fff;
+}
+
+ @media only screen and (max-width: 767px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            .carousel-caption {
+                bottom: 165px;
+            }
+            .carousel-caption h5 {
+                font-size: 17px;
+            }
+            .carousel-caption a {
+                padding: 10px 15px;
+                font-size: 15px;
+            }
+            .navbar .getstarted {
+                display: none;
+            }
+        }
+
+        .item{
+            background-color: rgb(223, 222, 222);
+            border-radius:10px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="/"><span>Health</span>Mate</a> 
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+            <a class="nav-link" href="/profile/{{userName}}/editProfile">Back to my Profile</a>
+					</li>
+					<li class="nav-item">
+            <a class="nav-link" href="/logout">Logout</a>						
+          </li>
+        </ul>
+			</div>
+		</div>
+	</nav>
+      <div class="container">
+      <div class="col-md-6 offset-md-3">
+            <div class="signup-form">
+        <form action="/profile/{{username}}/editProfile" method="POST">
+            <div class="mb-3">
+              <h4 class="text-center mb-5 ">Edit Profile</h4>
+              <label for="ufn" class="form-label ">Edit First Name :</label>
+              <input type="text" class="form-control" id="upfn" name="upfn" value="{{prof.userFirstName}}" required>
+            </div>
+            <div class="mb-3">
+              <label for="uln" class="form-label">Edit Last Name :</label>
+              <input type="text" class="form-control" id="upln" name="upln" value="{{prof.userLastName}}" required>
+            </div>
+            <div class="mb-3">
+              <label for="ueid" class="form-label">Edit Email ID :</label>
+              <input type="email" class="form-control" id="upeid" name="upeid" value="{{prof.userEmailID}}" required>
+            </div>
+            <div class="mb-3">
+              <label for="udob" class="form-label">Edit Date of birth: </label>
+              <input type="date" class="form-control" id="updob" name="updob" required>
+            </div>
+            <div class="col-md-12 text-center">
+              <button type="submit" class="btn btn-primary my-1">Update</button><br>            
+              <a href="/profile/{{username}}/editProfile/changePWD" class="btn btn-primary my-1">Change Password</a>
+            </div>
+          </form>
+          </div>
+        </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
